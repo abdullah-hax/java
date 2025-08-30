@@ -1,31 +1,31 @@
-class Rectangle{
-    int length;
-    int width;
+class Rectangle {
+    float length;
+    float width;
+    double resutl;
 
-    int calculateArea(){
-        int area = length * width;
-        return area;
+    double calculateArea() {
+        resutl = length * width;
+        return resutl;
     }
 
-    int calculatePerimeter(){
-        int perimeter = 2 * (length + width);
-        return perimeter;
+    double calculatePerimeter() {
+        resutl = 2 * (length + width);
+        return resutl;
     }
-
-
 }
 
-public class RectangleMain{
-    public static void main(String[] args){
-        Rectangle rect = new Rectangle();
+public class RectangleMain {
+    public static void main(String[] args) {
+        Rectangle r1 = new Rectangle();
+        Rectangle r2 = new Rectangle();
 
-        rect.length = 12;
-        rect.width = 5;
-
-        int area = rect.calculateArea();
-        int perimeter = rect.calculatePerimeter();
-
+        r1.length = 12;
+        r1.width = 5;
+        double area = r1.calculateArea();
+        double perimeter = r1.calculatePerimeter();
         System.out.println("Area = " + area);
         System.out.println("Perimeter = " + perimeter);
+
+        System.out.println("--------------------------");
     }
 }

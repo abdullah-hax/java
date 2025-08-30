@@ -1,17 +1,18 @@
-class Car{
+class Car {
 	String brand;
 	String model;
 	int year;
 
-	public void displayInfo(){
+	public void displayInfo() {
 		System.out.println("Brand : " + brand);
 		System.out.println("Model : " + model);
 		System.out.println("Year : " + year);
+		System.out.println("-----------------------");
 	}
 }
 
-class CarMain{
-	public static void main(String[] args){
+class CarMain {
+	public static void main(String[] args) {
 		Car object1 = new Car();
 		Car object2 = new Car();
 
@@ -26,5 +27,4 @@ class CarMain{
 		object1.displayInfo();
 		object2.displayInfo();
 	}
-
 }
